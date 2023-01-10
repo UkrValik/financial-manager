@@ -1,0 +1,23 @@
+version: '3'
+services:
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://valentyn:123123123@postgres:5432/financial-manager
+      NODE_ENV: development
+      PORT: 3000
+    ports:
+      - '3000:3000'
+
+  postgres:
+    image: postgres
+    ports:
+      - '35000:5432'
+    environment:
+      POSTGRES_USER: valentyn
+      POSTGRES_PASSWORD: 123123123
+      POSTGRES_DB: financial-manager
