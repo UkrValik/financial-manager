@@ -3,8 +3,8 @@ import { TransactionService } from './transaction.service';
 import { TransactionController } from './transaction.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { TransactionEntity } from './models/transaction.entity';
-import { BankModule } from 'src/bank/bank.module';
-import { WebhookModule } from 'src/webhook/webhook.module';
+import { BankModule } from '../bank/bank.module';
+import { WebhookModule } from '../webhook/webhook.module';
 
 @Module({
   imports: [

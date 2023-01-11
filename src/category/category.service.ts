@@ -1,12 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { TransactionTypeEnum } from 'src/transaction/enums';
-import { TransactionI } from 'src/transaction/models/transaction.interface';
 import { Repository } from 'typeorm';
 import { CategoryDto } from './dto/category.dto';
 import { StatisticCategoryDto } from './dto/statistic-category.dto';
 import { StatisticResponseCategoryDto } from './dto/statistic-response-category.dto';
 import { UpdateCategoryDto } from './dto/update-category.dto';
+import { TransactionTypeEnum } from '../transaction/enums';
+import { TransactionI } from '../transaction/models/transaction.interface';
 import { CategoryEntity } from './models/category.entity';
 import { CategoryI } from './models/category.interface';
 

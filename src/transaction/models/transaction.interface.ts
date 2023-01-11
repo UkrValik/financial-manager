@@ -1,4 +1,4 @@
-import { CategoryI } from 'src/category/models/category.interface';
+import { CategoryI } from '../../category/models/category.interface';
 import { BankI } from '../../bank/models/bank.interface';
 import { TransactionTypeEnum } from '../enums';
 

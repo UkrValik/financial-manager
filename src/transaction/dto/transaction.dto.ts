@@ -2,10 +2,10 @@ import { ApiProperty } from '@nestjs/swagger';
 import { IsArray, IsEnum, IsNumber, ValidateNested } from 'class-validator';
 import { Type } from 'class-transformer';
 import { TransactionTypeEnum } from '../enums';
-import { UpdateBankDto } from 'src/bank/dto/update-bank.dto';
-import { BankI } from 'src/bank/models/bank.interface';
-import { UpdateCategoryDto } from 'src/category/dto/update-category.dto';
-import { CategoryI } from 'src/category/models/category.interface';
+import { UpdateBankDto } from '../../bank/dto/update-bank.dto';
+import { BankI } from '../../bank/models/bank.interface';
+import { UpdateCategoryDto } from '../../category/dto/update-category.dto';
+import { CategoryI } from '../../category/models/category.interface';
 
 export class TransactionDto {
   @ApiProperty()

@@ -1,5 +1,5 @@
-import { TransactionEntity } from 'src/transaction/models/transaction.entity';
-import { TransactionI } from 'src/transaction/models/transaction.interface';
+import { TransactionEntity } from '../../transaction/models/transaction.entity';
+import { TransactionI } from '../../transaction/models/transaction.interface';
 import { PrimaryGeneratedColumn, Column, Entity, OneToMany } from 'typeorm';
 
 @Entity('bank')

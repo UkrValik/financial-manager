@@ -1,10 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import axios from 'axios';
-import { BankService } from 'src/bank/bank.service';
-import { BankI } from 'src/bank/models/bank.interface';
-import { WebhookService } from 'src/webhook/webhook.service';
 import { Repository } from 'typeorm';
+import axios from 'axios';
+import { BankService } from '../bank/bank.service';
+import { BankI } from '../bank/models/bank.interface';
+import { WebhookService } from '../webhook/webhook.service';
 import { TransactionDto } from './dto/transaction.dto';
 import { TransactionTypeEnum } from './enums';
 import { TransactionEntity } from './models/transaction.entity';
