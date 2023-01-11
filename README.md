@@ -5,6 +5,11 @@ $ docker compose up --build
 ```
 Swagger docs will be ready by /api endpoint
 
+Run tests:
+```bash
+$ npm run test
+```
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
